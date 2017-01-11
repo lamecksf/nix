@@ -7,22 +7,25 @@ import sys, getopt
 import popen2
 
 from opts import Opts
+from cIP import cIP
+
 exp = Opts()
+vIP = cIP()
 
 def main(argv):
 
 	print exp.getHead()
 
 	try:
-		opts, args = getopt.getopt(argv,'i:h', ['ip=','all','help','status','country','country_code','region','city','zipcode','lat','lon','timezone','isp','org','as','query','concat='])
+		opts, args = getopt.getopt(argv,'i:h', ['ip=','all','help','status','country','country_code','region','city','zipcode','lat','lon','timezone','isp','org','as','query'])
 	except getopt.GetoptError:
-		print exp.getEr()
+		print vIP.getEr()
 		sys.exit(2)
 
 	for opt, arg in opts:
 
 		if opt in ('-h','--help'):
-			print exp.getHelp()
+			print vIP.getHelp()
 			sys.exit()
 		
 		elif opt in ('-i', '--ip'):
@@ -30,54 +33,50 @@ def main(argv):
 				ip = ''
 			else:
 				ip = arg
-			exp.ip = ip
-			exp.geoIP()
+			vIP.ip = ip
+			vIP.geoIP()
 
 		elif opt in ('-a', '--all'):			
-			print exp.getDataPrint()
+			print vIP.getDataPrint()
 
 		elif opt in ('--status'):
-			print exp.getStatus()
+			print vIP.getStatus()
 
 		elif opt in ('--country'):
-			print exp.getCountry()
+			print vIP.getCountry()
 
 		elif opt in ('--country_code'):
-			print exp.getCountryCode()
+			print vIP.getCountryCode()
 
 		elif opt in ('--region'):
-			print exp.getRegion()
+			print vIP.getRegion()
 
 		elif opt in ('--city'):
-			print exp.getCity()
+			print vIP.getCity()
 
 		elif opt in ('--zipcode'):
-			print exp.getZip()
+			print vIP.getZip()
 
 		elif opt in ('--lat'):
-			print exp.getLat()
+			print vIP.getLat()
 
 		elif opt in ('--lon'):
-			print exp.getLong()
+			print vIP.getLong()
 
 		elif opt in ('--timezone'):
-			print exp.getTimeZone()
+			print vIP.getTimeZone()
 
 		elif opt in ('--isp'):
-			print exp.getISP()
+			print vIP.getISP()
 
 		elif opt in ('--org'):
-			print exp.getORG()
+			print vIP.getORG()
 
 		elif opt in ('--as'):
-			print exp.getAs()
+			print vIP.getAs()
 
 		elif opt in ('--query'):
-			print exp.getQuery()
-
-		elif opt in ('--concat'):
-			print arg
-
+			print vIP.getQuery()
 
 
 
