@@ -1,7 +1,7 @@
 # nix
 
 Mitology: https://pt.wikipedia.org/wiki/Nix<br>
-ASCII: http://www.kammerl.de/ascii/AsciiSignature.php
+ASCII (modelo usado : STARWARS): http://www.kammerl.de/ascii/AsciiSignature.php
 
 
 <pre>
