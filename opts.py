@@ -23,7 +23,7 @@ class Opts():
 		self.er=er
 
 		helpp = '\n'+'%44s'%'NIx Geo IP Tracking 1.0 (c) 2017 Lameck\n'
-		helpp += '%22s'%'github.isso.isso\n\n'
+		helpp += '%22s'%'https://github.com/lamecksf/nix/\n\n'
 		helpp += '%36s'%'usage: python nit.py [options]\n\n'
 		helpp += '%40s'%'-i, --ip <iptarget or myip>%15s'%'Target IP\n\n'
 		helpp += '%30s'%'--all  %15s'%'All params\n'
