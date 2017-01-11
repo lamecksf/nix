@@ -17,7 +17,9 @@ ASCII (modelo usado : STARWARS): http://www.kammerl.de/ascii/AsciiSignature.php
 
 <hr>
 
-NIX aspira um programa em shell para descrição, localização e tracking de um IP de forma dinâmica.
+NIX aspira um programa em shell para descrição, localização e tracking de um IP de forma dinâmica. Incialmente foi desenvolvida em python à objeto.
+A motivação surgiu aps usar o "anonsurf myip" retornando um IP e o código de um país. Minha biblioteca "geo" estava desatualizada promovendo um erro interno. Precisei buscar informaçes do IP abrindo o navegador, entrando no site de localizaço e inserindo os dados. Resolvi facilitar escrevendo o projeto, inicialmente, com o lookup do IP. A base esta pronta. Contribua caso o deseje.
+
 
 # INSTRUÇÃO
 
