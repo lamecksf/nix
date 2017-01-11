@@ -21,10 +21,11 @@ NIX aspira um programa em shell para descrição, localização e tracking de um
 
 # INSTRUÇÃO
 
-#Para compilar: python nix.py -h
-ou
-chmod 777 nix.py
-./nix.py -h
+#Para compilar: 
+<p>python nix.py -h</p>
+<p>ou</p>
+<p>chmod 777 nix.py</p>
+<p>./nix.py -h</p>
 
 #Para inserir na varivel de ambiente:
 1. Jogue a pasta nix em /usr/bin/
