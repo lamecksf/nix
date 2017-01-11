@@ -49,7 +49,7 @@ A inspiraço para o nome nix surgiu á circunstância sobre a necessidade de bus
 
 
     NIx Geo IP Tracking 1.0 (c) 2017 Lameck
-    github.isso.isso
+    https://github.com/lamecksf/nix/
 
     usage: python nit.py [options]
 
