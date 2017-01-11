@@ -18,8 +18,9 @@ ASCII (modelo usado : STARWARS): http://www.kammerl.de/ascii/AsciiSignature.php
 <hr>
 
 NIX aspira um programa em shell para descrição, localização e tracking de um IP de forma dinâmica. Incialmente foi desenvolvida em python à objeto.
-A motivação surgiu aps usar o "anonsurf myip" retornando um IP e o código de um país. Minha biblioteca "geo" estava desatualizada promovendo um erro interno. Precisei buscar informaçes do IP abrindo o navegador, entrando no site de localizaço e inserindo os dados. Resolvi facilitar escrevendo o projeto, inicialmente, com o lookup do IP. A base esta pronta. Contribua caso o deseje.
+A motivação surgiu aps usar o "anonsurf myip" retornando um IP e o código de um país. Minha biblioteca "geo" estava desatualizada promovendo um erro interno. Precisei buscar informações do IP abrindo o navegador, entrando no site de localização e inserindo os dados. Resolvi então facilitar escrevendo o projeto, inicialmente, com o lookup do IP. A base esta pronta. Contribua caso o deseje.
 
+A inspiraço para o nome nix surgiu á circunstância sobre a necessidade de busca de informaçes do IPas 2:00 a.m. Nix, na mitologia, refere-se a personificaço da noite e deusa dos segredos e mistrios noturnos. Ficou bem apropriado.
 
 # INSTRUÇÃO
 
