@@ -88,3 +88,8 @@ NIX aspira um programa em shell para descrição, localização e tracking de um
 12. --org Lista a Organização que nomeia a referência: nix.py -i myip --org
 13. --as Lista nome fantasia sobre a referncia 12: nix.py -i myip --as
 14. --query Lista o IP de busca: nix.py -i myip --query
+
+<hr>
+
+#Novas
+Próximas atualizaçes contar com google maps. Será disponibilizado as keys do projeto dessa forma no precisar criar uma key para usar as dependncias da api do google.
