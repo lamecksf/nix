@@ -5,7 +5,8 @@ import os
 
 class Opts:
 
-	
+	helpp = ''
+
 	def __init__(self):
 		
 		hd = '\n'+'%44s'%'.__   __.  __  ___   ___\n'
@@ -13,7 +14,7 @@ class Opts:
 		hd += '%44s'%'|   \|  | |  |  \  V  / \n'
 		hd += '%44s'%'|  . `  | |  |   >   <  \n'
 		hd += '%44s'%'|  |\   | |  |  /  .  \ \n'
-		hd += '%50s'%'|__| \__| |__| /__/ \__\  v1.0\n'
+		hd += '%50s'%'|__| \__| |__| /__/ \__\  v1.1\n'
 		self.head=hd
 		
 		helpp = '\n'+'%44s'%'NIx Geo IP Tracking 1.0 (c) 2017 Lameck\n'
@@ -45,6 +46,5 @@ class Opts:
 
 	def getHelp(self):
 		return self.helpp
-
 
 	

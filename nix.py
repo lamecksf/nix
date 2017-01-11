@@ -1,10 +1,9 @@
 #!/usr/bin/python
-#
-#
+# NIx GeoIP Tool
+# nv 1.1
 #
 
 import sys, getopt
-import popen2
 
 from opts import Opts
 from cIP import cIP
@@ -25,7 +24,7 @@ def main(argv):
 	for opt, arg in opts:
 
 		if opt in ('-h','--help'):
-			print vIP.getHelp()
+			print exp.getHelp()
 			sys.exit()
 		
 		elif opt in ('-i', '--ip'):
