@@ -1,6 +1,6 @@
 # nix
 
-Mitology: https://pt.wikipedia.org/wiki/Nix
+Mitology: https://pt.wikipedia.org/wiki/Nix<br>
 ASCII: http://www.kammerl.de/ascii/AsciiSignature.php
 
 
