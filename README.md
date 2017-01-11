@@ -36,6 +36,11 @@ A inspiraço para o nome nix surgiu á circunstância sobre a necessidade de bus
 3. Certifique-se que foi inserida: echo $PATH
 4. Teste em qualquer diretrio digitando: nix.py -h
 
+Permanentes:<br>
+<p>sudo nano /etc/bash.bashrc</p>
+<p>nano .bashrc</p>
+<p>Ou dinamize isso conforme suas necessidades</p>
+
 <hr>
 
 #Comandos iniciais
@@ -95,4 +100,8 @@ A inspiraço para o nome nix surgiu á circunstância sobre a necessidade de bus
 <hr>
 
 #Novas
-Próximas atualizaçes contar com google maps. Será disponibilizado as keys do projeto dessa forma no precisar criar uma key para usar as dependncias da api do google.
+1. Próximas atualizaçes contar com google maps. Será disponibilizado as keys do projeto dessa forma no precisar criar uma key para usar as dependncias da api do google.
+2. Integrar com as bibliotecas dos correios do meu país (Brasil)
+
+A ideia a longo prazo  toolkit.
+Só diverso.
