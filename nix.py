@@ -1,18 +1,37 @@
 #!/usr/bin/python
 # NIx GeoIP Tool
-# nv 1.2
+# nv 1.3
 
 
-import sys, getopt
-import mInit, mIP, mZPC
-
+import sys, getopt, os
+import mInit, mIP
+import mRouter
 
 def main(argv):
 
+	os.system("clear")
 	mInit.header()
 
 	try:
-		opts, args = getopt.getopt(argv,'i:h', ['ip=','all','help','status','country','country_code','region','city','zipcode','lat','lon','timezone','isp','org','as','query','zpc'])
+		opts, args = getopt.getopt(argv,'i:h', [
+												'ip=',
+												'all',
+												'help',
+												'status',
+												'country',
+												'country_code',
+												'region',
+												'city',
+												'zipcode',
+												'lat',
+												'lon',
+												'timezone',
+												'isp',
+												'org',
+												'as',
+												'query',
+												'zpc',
+												'gzip'])
 	except getopt.GetoptError:
 		print mIP.getTry()
 		sys.exit(2)
@@ -73,8 +92,11 @@ def main(argv):
 			print mIP.getQuery()
 
 		elif opt in ('--zpc'):
-			mZPC.zpcShoot(mIP.getZip())
-			mZPC.getDataPrint()
+			mRouter.setRote(mIP.getCountryCode(),mIP.getZip())
+
+		elif opt in ('--gzip'):
+			mInit.gZip()
+			
 
 
 if __name__ == "__main__":

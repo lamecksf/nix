@@ -58,7 +58,11 @@ Permanentes:<br>
 
     usage: python nit.py [options]
 
-                -i, --ip       Target IP
+         ##########################################
+                  SET IDENTIFIE PROTOCOL
+         ##########################################
+
+         -i, --ip <iptarget or myip>    Target IP
 
                    --all      All params
                 --status          Status
@@ -74,10 +78,22 @@ Permanentes:<br>
                    --org    Organization
                     --as              As
                  --query  Identificate Protocol
-                 --zpc    Postal Address System (Br) 
+                   --zpc  Postal Address System (Br)
 
 
-       nit.py --ip myip --all --zpc
+      nit.py --ip myip --all --zpc
+
+
+       ##########################################
+                       SET ZIPCODE
+       ##########################################
+
+                  --gzip  Get Zipcode Area
+                       country code >>>  Set code of country
+                            zipcode >>>  Set zipecode of area
+
+     nit.py --gzip 
+
 
 </pre>
 
