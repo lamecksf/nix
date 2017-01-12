@@ -1,8 +1,9 @@
 # NIx GeoIP Tool
-# nv 1.3
+# nv 1.4
 # Modulo Router
 
-import mZPC
+import mZPCBR
+import mZPCUS
 
 class Struct:
 	def __init__(self):
@@ -14,14 +15,17 @@ country.code = []
 #++++++++++++++++++++++++++++++++++++++
 country.code.append('br')
 country.code.append('us')
+country.code.append('')
 #++++++++++++++++++++++++++++++++++++++
 
 def setRote(countryCode,zipCode):
 
 	if (countryCode.lower() == country.code[0]): # Brasil
-		mZPC.zpcShoot(zipCode)
-		mZPC.getDataPrint()
+		mZPCBR.zpcShoot(zipCode)
+		mZPCBR.getDataPrint()
 
 	if (countryCode.lower() == country.code[1]): # Units States
-		print '# :: NONE LIB TO THIS COUNTRY::'
-
+		mZPCUS.zpcShoot(zipCode)
+		mZPCUS.getDataPrint()
+	if (countryCode.lower() == country.code[2]): # 
+		print '%38s'%'# :: NONE LIB TO THIS COUNTRY::\n'

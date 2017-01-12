@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # NIx GeoIP Tool
-# nv 1.3
+# nv 1.4
 
 
 import sys, getopt, os

@@ -1,8 +1,10 @@
 # NIx GeoIP Tool
-# nv 1.3
+# nv 1.4
 # Modulo Inicial
 
 import mRouter
+
+version = 'nv1.4'
 
 def header():
 	hd = '\n'+'%44s'%'.__   __.  __  ___   ___\n'
@@ -10,13 +12,13 @@ def header():
 	hd += '%44s'%'|   \|  | |  |  \  V  / \n'
 	hd += '%44s'%'|  . `  | |  |   >   <  \n'
 	hd += '%44s'%'|  |\   | |  |  /  .  \ \n'
-	hd += '%51s'%'|__| \__| |__| /__/ \__\  nv1.3\n'
+	hd += '%45s'%'|__| \__| |__| /__/ \__\  '+version+'\n'
 	print hd
 
 def helper():
-	hp = '\n'+'%44s'%'NIx Geo IP Tracking 1.0 (c) 2017 Lameck\n'
-	hp += '%38s'%'https://github.com/lamecksf/nix/\n\n'
-	hp += '%36s'%'usage: python nit.py [options]'
+	hp = '\n'+'%27s'%'NIx Geo IP Tracking '+version+' (c) 2017 Lameck\n'
+	hp += '%41s'%'https://github.com/lamecksf/nix/\n\n'
+	hp += '%37s'%'usage: python nit.py [options]'
 
 	hp += '\n\n'+'%51s'%'##########################################\n'
 	hp += '%39s'%'SET IDENTIFIE PROTOCOL\n'
