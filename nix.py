@@ -1,30 +1,26 @@
 #!/usr/bin/python
 # NIx GeoIP Tool
-# nv 1.1
-#
+# nv 1.2
+
 
 import sys, getopt
+import mInit, mIP, mZPC
 
-from opts import Opts
-from cIP import cIP
-
-exp = Opts()
-vIP = cIP()
 
 def main(argv):
 
-	print exp.getHead()
+	mInit.header()
 
 	try:
-		opts, args = getopt.getopt(argv,'i:h', ['ip=','all','help','status','country','country_code','region','city','zipcode','lat','lon','timezone','isp','org','as','query'])
+		opts, args = getopt.getopt(argv,'i:h', ['ip=','all','help','status','country','country_code','region','city','zipcode','lat','lon','timezone','isp','org','as','query','zpc'])
 	except getopt.GetoptError:
-		print vIP.getEr()
+		print mIP.getTry()
 		sys.exit(2)
 
 	for opt, arg in opts:
 
 		if opt in ('-h','--help'):
-			print exp.getHelp()
+			mInit.helper()
 			sys.exit()
 		
 		elif opt in ('-i', '--ip'):
@@ -32,51 +28,53 @@ def main(argv):
 				ip = ''
 			else:
 				ip = arg
-			vIP.ip = ip
-			vIP.geoIP()
+			mIP.geoIP(ip)
 
 		elif opt in ('-a', '--all'):			
-			print vIP.getDataPrint()
+			mIP.getDataPrint()
 
 		elif opt in ('--status'):
-			print vIP.getStatus()
+			print mIP.getStatus()
 
 		elif opt in ('--country'):
-			print vIP.getCountry()
+			print mIP.getCountry()
 
 		elif opt in ('--country_code'):
-			print vIP.getCountryCode()
+			print mIP.getCountryCode()
 
 		elif opt in ('--region'):
-			print vIP.getRegion()
+			print mIP.getRegion()
 
 		elif opt in ('--city'):
-			print vIP.getCity()
+			print mIP.getCity()
 
 		elif opt in ('--zipcode'):
-			print vIP.getZip()
+			print mIP.getZip()
 
 		elif opt in ('--lat'):
-			print vIP.getLat()
+			print mIP.getLat()
 
 		elif opt in ('--lon'):
-			print vIP.getLong()
+			print mIP.getLon()
 
 		elif opt in ('--timezone'):
-			print vIP.getTimeZone()
+			print mIP.getTimeZone()
 
 		elif opt in ('--isp'):
-			print vIP.getISP()
+			print mIP.getISP()
 
 		elif opt in ('--org'):
-			print vIP.getORG()
+			print mIP.getORG()
 
 		elif opt in ('--as'):
-			print vIP.getAs()
+			print mIP.getAs()
 
 		elif opt in ('--query'):
-			print vIP.getQuery()
+			print mIP.getQuery()
 
+		elif opt in ('--zpc'):
+			mZPC.zpcShoot(mIP.getZip())
+			mZPC.getDataPrint()
 
 
 if __name__ == "__main__":
